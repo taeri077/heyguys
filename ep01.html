@@ -1,381 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Heyguys EP.01 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Heyguys EP.01 — Jakub Mužík · Leadverse</title>
-<meta name="description" content="MRR · 3.3k 달러"/>
-<meta property="og:title" content="Heyguys EP.01 — Jakub Mužík · Leadverse"/>
-<meta property="og:description" content="MRR · 3.3k 달러"/>
-<meta property="og:type" content="article"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Inter',sans-serif;background:#f7fafc;color:#181c1e;line-height:1.7;}
-  .container{max-width:800px;margin:0 auto;padding:0 24px;}
-  header{background:#002045;color:white;padding:16px 0;}
-  header .inner{display:flex;align-items:center;justify-content:space-between;}
-  .brand{font-size:1.2rem;font-weight:700;color:white;text-decoration:none;}
-  .lang-btn{border:1px solid rgba(255,255,255,0.4);border-radius:6px;padding:4px 12px;font-size:13px;font-weight:600;color:white;background:transparent;cursor:pointer;}
-  .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#fe9743;margin-bottom:8px;}
-  h1{font-size:2.5rem;font-weight:700;color:#002045;line-height:1.2;margin-bottom:16px;}
-  @media(max-width:600px){h1{font-size:1.8rem;}}
-  .lead{font-size:1.1rem;color:#43474e;margin-bottom:32px;}
-  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0;}
-  @media(max-width:600px){.stat-grid{grid-template-columns:1fr;}}
-  .stat-card{background:#ebeef0;border-radius:8px;padding:20px;text-align:center;}
-  .stat-num{font-size:2rem;font-weight:700;color:#002045;}
-  .note{font-size:0.75rem;color:#74777f;background:#ebeef0;padding:12px;border-radius:6px;margin-bottom:32px;}
-  .section{margin:40px 0;}
-  .section-label{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#944b00;margin-bottom:8px;}
-  h2{font-size:1.5rem;font-weight:700;color:#002045;margin-bottom:16px;}
-  p{color:#43474e;margin-bottom:16px;line-height:1.8;}
-  .divider{border:none;border-top:1px solid #c4c6cf;margin:40px 0;}
-  .refs-item{font-size:0.85rem;color:#43474e;margin-bottom:8px;padding-left:16px;border-left:3px solid #002045;}
-  footer{background:#002045;color:white;padding:32px 0;margin-top:64px;text-align:center;}
-  footer a{color:#fe9743;text-decoration:none;}
-  .back-btn{display:inline-flex;align-items:center;gap:6px;color:#002045;font-weight:600;font-size:0.9rem;text-decoration:none;margin-bottom:32px;}
-</style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title data-en="HONUP Builder — Heyguys EP.01" data-ko="HONUP Builder — 솔로프레너의 글로벌 빌딩 로그">HONUP Builder — Heyguys EP.01</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config from Brand Anchors -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e5e9eb",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-background": "#181c1e",
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "outline": "#74777f",
+                        "surface": "#f7fafc",
+                        "on-primary-container": "#86a0cd",
+                        "tertiary": "#162132",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7fafc",
+                        "tertiary-container": "#2b3648",
+                        "inverse-on-surface": "#eef1f3",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container": "#ebeef0",
+                        "primary-container": "#1a365d",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d7dadc",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#111c2c",
+                        "secondary": "#944b00",
+                        "primary-fixed-dim": "#adc7f7",
+                        "surface-container-low": "#f1f4f6",
+                        "on-tertiary-container": "#949fb4",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "secondary-container": "#fe9743",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#301400",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface": "#181c1e",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "surface-tint": "#455f88",
+                        "on-secondary-container": "#6b3500",
+                        "surface-bright": "#f7fafc",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-primary": "#adc7f7",
+                        "outline-variant": "#c4c6cf",
+                        "on-surface-variant": "#43474e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#d8e3fa",
+                        "primary": "#002045",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-fixed": "#001b3c",
+                        "on-secondary-fixed-variant": "#703700"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "16px",
+                        "container-max": "1200px",
+                        "xl": "64px",
+                        "xs": "8px",
+                        "base": "4px",
+                        "lg": "40px",
+                        "gutter": "24px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "button": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "button": ["14px", { "lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        "level1": "0px 2px 4px rgba(26, 54, 93, 0.04)",
+                        "level2": "0px 10px 15px -3px rgba(26, 54, 93, 0.08)"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-<header>
-  <div class="container">
-    <div class="inner">
-      <a href="https://honupbuilder.mariacamp.com" class="brand">HONUP Builder</a>
-      <div style="display:flex;align-items:center;gap:16px;">
-        <button class="lang-btn" id="lang-btn" onclick="toggleLang()">KR</button>
-        <span style="font-size:0.8rem;opacity:0.7;" data-en="Heyguys · Founder Dissect" data-ko="Heyguys · 창업가 해부 시리즈">Heyguys · Founder Dissect</span>
-      </div>
-    </div>
-  </div>
-</header>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+            <!-- Brand -->
+            <a class="flex items-center text-headline-md font-headline-md text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity active:scale-95 duration-200" href="index.html">
+                <img src="HONUP_Builder_logo.png" alt="HONUP Builder logo" style="height: 32px; margin-right: 8px; vertical-align: middle;">HONUP Builder
+            </a>
+            <!-- Desktop Nav -->
+            <ul class="hidden md:flex gap-gutter items-center text-body-md font-body-md">
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="index.html#building-log">Building Log</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="index.html#heyguys">Heyguys</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="index.html#e-books">E-books</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="index.html#hb-log">HB Log</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="index.html#subscribe">Newsletter</a></li>
+            </ul>
+            <!-- Actions -->
+            <div class="flex items-center gap-sm">
+                <!-- Language Toggle -->
+                <button
+                    id="lang-toggle"
+                    onclick="toggleLang()"
+                    class="hidden md:inline-flex items-center border border-outline-variant text-on-surface-variant font-button text-button px-sm py-xs rounded-lg hover:bg-surface-container transition-colors"
+                    style="min-width: 48px; justify-content: center;">
+                    KR
+                </button>
+                <a class="hidden md:inline-flex bg-primary text-on-primary font-button text-button px-sm py-xs rounded-lg hover:bg-primary/90 transition-colors shadow-level1" href="index.html#subscribe">Subscribe</a>
+                <!-- Mobile Menu Toggle -->
+                <button class="md:hidden text-primary p-xs hover:bg-surface-container rounded-DEFAULT transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/30 px-gutter py-md">
+            <ul class="flex flex-col gap-sm text-body-md font-body-md mb-sm">
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="index.html#building-log">Building Log</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="index.html#heyguys">Heyguys</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="index.html#e-books">E-books</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="index.html#hb-log">HB Log</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="index.html#subscribe">Newsletter</a></li>
+            </ul>
+            <div class="flex gap-sm">
+                <button
+                    id="lang-toggle-mobile"
+                    onclick="toggleLang()"
+                    class="flex-1 justify-center border border-outline-variant text-on-surface-variant font-button text-button px-sm py-xs rounded-lg hover:bg-surface-container transition-colors flex items-center">
+                    KR
+                </button>
+                <a class="flex-1 justify-center bg-primary text-on-primary font-button text-button px-sm py-xs rounded-lg hover:bg-primary/90 transition-colors flex items-center" href="index.html#subscribe">Subscribe</a>
+            </div>
+        </div>
+    </nav>
 
-<main style="padding:48px 0;">
-  <div class="container">
-    <a href="https://honupbuilder.mariacamp.com#building-log" class="back-btn" data-en="← Back to Building Log" data-ko="← Building Log으로 돌아가기">← Back to Building Log</a>
-    
-    <div class="eyebrow">🔬 Heyguys · EP.01</div>
-    <h1>Jakub Mužík · Leadverse</h1>
-    <p class="lead">MRR · 3.3k 달러</p>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow pt-[104px] pb-xl flex flex-col gap-xl">
+        <!-- Back Navigation & Breadcrumb -->
+        <section class="max-w-container-max mx-auto px-gutter w-full pt-md">
+            <a href="index.html#heyguys" class="inline-flex items-center gap-xs text-primary font-button hover:underline">
+                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                <span data-en="Back to Heyguys" data-ko="Heyguys로 돌아가기">Back to Heyguys</span>
+            </a>
+        </section>
 
-    <div class="stat-grid" id="stat-grid-en">
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">MRR</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">3.3k 달러</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">월간 반복 매출액으로 보고됨</div>
-      </div>
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">핵심 특징 1</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">앱 출시 및 스케일링 지원</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">개발자/창업가가 애플리케이션을 론칭하고 모멘텀을 얻도록 돕는 플랫폼</div>
-      </div>
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">핵심 특징 2</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">구독 기반 수익 모델</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">주요 수입원은 구독 서비스 형태임</div>
-      </div></div>
-    <div class="stat-grid" id="stat-grid-ko" style="display:none;"><div class="stat-card"><div class="stat-num">MRR</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">3.3k 달러</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">월간 반복 매출액으로 보고됨</div></div><div class="stat-card"><div class="stat-num">핵심 특징 1</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">앱 출시 및 스케일링 지원</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">개발자/창업가가 애플리케이션을 론칭하고 모멘텀을 얻도록 돕는 플랫폼</div></div><div class="stat-card"><div class="stat-num">핵심 특징 2</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">구독 기반 수익 모델</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">주요 수입원은 구독 서비스 형태임</div></div></div>
+        <!-- Newsletter Section -->
+        <section class="max-w-container-max mx-auto px-gutter w-full py-xl scroll-mt-24" id="subscribe">
+            <div class="bg-primary text-on-primary rounded-xl p-lg md:p-xl shadow-level2 relative overflow-hidden flex flex-col md:flex-row items-center gap-lg">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="flex-1 z-10">
+                    <h2
+                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-sm"
+                        data-en="One story a week. The real journey of a global solopreneur."
+                        data-ko="매주 한 편, 솔로프리너의 글로벌 빌더 이야기를 전합니다.">
+                        One story a week. The real journey of a global solopreneur.
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-primary-fixed-dim mb-0">
+                        <span
+                            data-en="From idea validation to first revenue — raw, honest building logs. Free."
+                            data-ko="아이디어 검증부터 배포, 첫 매출까지 — 한국인 솔로프레너의 실전 기록. 무료입니다.">
+                            From idea validation to first revenue — raw, honest building logs. Free.
+                        </span><br/>
+                        <span
+                            class="text-secondary-fixed font-semibold"
+                            data-en="Subscribe now · Get the AI App Builder Guide free"
+                            data-ko="구독 즉시 · AI 앱 빌더 가이드 무료 증정">
+                            Subscribe now · Get the AI App Builder Guide free
+                        </span>
+                    </p>
+                    <p class="text-xs text-primary-fixed-dim/80 mt-sm">
+                        <span
+                            data-en="By subscribing, you agree to Substack's Terms of Service and Privacy Policy, as well as"
+                            data-ko="구독 시 Substack 이용약관 및 개인정보처리방침에 동의하게 되며,">
+                            By subscribing, you agree to Substack's Terms of Service and Privacy Policy, as well as
+                        </span>
+                        <br class="hidden sm:inline"/>
+                        <a href="privacy.html" class="underline hover:text-white transition-colors"
+                            data-en="HONUP Builder Privacy Policy"
+                            data-ko="HONUP Builder의 개인정보처리방침">
+                            HONUP Builder Privacy Policy
+                        </a>
+                        <span data-en="." data-ko="도 함께 적용됩니다.">.</span>
+                    </p>
+                </div>
+                <div class="flex-1 w-full z-10 flex justify-center items-center">
+                    <iframe src="https://bass077.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p class="note" data-en="Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section." data-ko="수치는 본인 공개 인터뷰 및 업계 자료 기준입니다. 불확실한 수치는 각 섹션에 표시했습니다.">Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section.</p>
+    <!-- Footer -->
+    <footer class="w-full py-lg mt-xl border-t border-outline-variant bg-surface-container-low dark:bg-tertiary-container">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-md">
+            <div class="text-on-surface dark:text-on-tertiary-container font-label-caps text-label-caps">
+                © 2026 HONUP Builder
+            </div>
+            <ul class="flex gap-md text-on-surface-variant font-label-caps text-label-caps items-center flex-wrap">
+                <li>
+                    <a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="privacy.html"
+                        data-en="Privacy Policy &amp; Terms"
+                        data-ko="개인정보처리방침 및 이용약관">
+                        Privacy Policy &amp; Terms
+                    </a>
+                </li>
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://x.com/taerijakga" target="_blank" rel="noopener noreferrer">X (Global)</a></li>
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://www.instagram.com/honup.log" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer">Velog</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <div class="section">
-      <div class="section-label" data-en="① WHO" data-ko="① 누구인가">① WHO</div>
-      <h2 data-en="Who is Jakub Mužík?" data-ko="Jakub Mužík은 누구인가">Who is Jakub Mužík?</h2>
-      <p id="who-en">창업가 Jakub Mužík는 Leadverse를 설립하여 개발자 및 기업가들이 수많은 애플리케이션 중 하나가 성공적인 모멘텀을 얻도록 돕는 플랫폼을 구축했습니다. Leadverse의 핵심 가치는 '수많은 앱을 출시하여 하나의 성공적인 제품을 만드는 것'에 초점을 맞추고 있습니다.<br/>서비스 공식 웹사이트 URL: <a href="https://leadverse.ai/" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://leadverse.ai/</a></p>
-      <p id="who-ko" style="display:none;">창업가 Jakub Mužík는 Leadverse를 설립하여 개발자 및 기업가들이 수많은 애플리케이션 중 하나가 성공적인 모멘텀을 얻도록 돕는 플랫폼을 구축했습니다. Leadverse의 핵심 가치는 '수많은 앱을 출시하여 하나의 성공적인 제품을 만드는 것'에 초점을 맞추고 있습니다.<br/>서비스 공식 웹사이트 URL: <a href="https://leadverse.ai/" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://leadverse.ai/</a></p>
-    </div><hr class="divider"/>
+    <!-- Language Toggle Script -->
+    <script>
+    (function() {
+        var STORAGE_KEY = 'honup-lang';
 
-    <div class="section">
-      <div class="section-label" data-en="② THE QUESTION" data-ko="② 이 편의 질문">② THE QUESTION</div>
-      <h2 data-en="What we're dissecting" data-ko="우리가 해부할 것">What we're dissecting</h2>
-      <p id="question-en">Leadverse의 핵심 질문은 '수많은 아이디어와 앱 중에서 어떻게 단 하나의 제품이 성공적인 모멘텀을 얻도록 도울 것인가?'입니다. 이 서비스는 아이디어의 과부하 상태에서 벗어나, 개발자가 시장에서 주목받을 수 있는 단일 제품에 집중하고 성장할 수 있도록 돕는 것이 핵심 논지입니다.</p>
-      <p id="question-ko" style="display:none;">Leadverse의 핵심 질문은 '수많은 아이디어와 앱 중에서 어떻게 단 하나의 제품이 성공적인 모멘텀을 얻도록 도울 것인가?'입니다. 이 서비스는 아이디어의 과부하 상태에서 벗어나, 개발자가 시장에서 주목받을 수 있는 단일 제품에 집중하고 성장할 수 있도록 돕는 것이 핵심 논지입니다.</p>
-    </div><hr class="divider"/>
+        function applyLang(lang) {
+            document.documentElement.lang = lang;
 
-    <div class="section">
-      <div class="section-label" data-en="③ REVENUE" data-ko="③ 수입 구조">③ REVENUE</div>
-      <h2 data-en="How they make money" data-ko="어떻게 버는가">How they make money</h2>
-      <p id="revenue-en">Leadverse의 주요 수입 구조는 구독 기반(Subscription-based) 모델입니다. 이는 월간 반복 매출(MRR)을 통해 직접적으로 측정되며, 보고된 수치는 3,300달러(약 450만 원, 환율에 따라 변동)의 MRR입니다. 이 모델은 지속적인 사용자 확보와 서비스 가치 제공을 통해 안정적인 반복 수익을 창출하는 데 중점을 둡니다.</p>
-      <p id="revenue-ko" style="display:none;">Leadverse의 주요 수입 구조는 구독 기반(Subscription-based) 모델입니다. 이는 월간 반복 매출(MRR)을 통해 직접적으로 측정되며, 보고된 수치는 3,300달러(약 450만 원, 환율에 따라 변동)의 MRR입니다. 이 모델은 지속적인 사용자 확보와 서비스 가치 제공을 통해 안정적인 반복 수익을 창출하는 데 중점을 둡니다.</p>
-    </div><hr class="divider"/>
+            var els = document.querySelectorAll('[data-en][data-ko]');
+            els.forEach(function(el) {
+                var text = el.getAttribute('data-' + lang);
+                if (text !== null) {
+                    el.textContent = text;
+                }
+            });
 
-    <div class="section">
-      <div class="section-label" data-en="④ THEORY / DATA" data-ko="④ 이론/데이터">④ THEORY / DATA</div>
-      <h2 data-en="The framework behind it" data-ko="이론으로 해부한다">The framework behind it</h2>
-      <p id="theory-en">Leadverse의 성공 이론은 '다수 실험을 통한 단일 집중(Many Experiments to Single Focus)'에 기반합니다. 초기 단계에서는 다양한 앱을 출시하여 시장의 반응을 실험하고 데이터를 수집하는 데 집중합니다. 이후, 이 데이터를 기반으로 가장 잠재력이 높은 제품을 식별하고 리소스를 집중하여 해당 제품의 성장을 가속화하는 전략입니다. 이는 'Launch countless apps until one gained momentum'이라는 철학을 실현하기 위한 방법론적 접근입니다.</p>
-      <p id="theory-ko" style="display:none;">Leadverse의 성공 이론은 '다수 실험을 통한 단일 집중(Many Experiments to Single Focus)'에 기반합니다. 초기 단계에서는 다양한 앱을 출시하여 시장의 반응을 실험하고 데이터를 수집하는 데 집중합니다. 이후, 이 데이터를 기반으로 가장 잠재력이 높은 제품을 식별하고 리소스를 집중하여 해당 제품의 성장을 가속화하는 전략입니다. 이는 'Launch countless apps until one gained momentum'이라는 철학을 실현하기 위한 방법론적 접근입니다.</p>
-    </div><hr class="divider"/>
+            var titleEl = document.querySelector('title');
+            if (titleEl) {
+                var titleText = titleEl.getAttribute('data-' + lang);
+                if (titleText) titleEl.textContent = titleText;
+            }
 
-    <div class="section">
-      <div class="section-label" data-en="⑤ TIMELINE" data-ko="⑤ 성장 타임라인">⑤ TIMELINE</div>
-      <h2 data-en="Not an overnight success" data-ko="하룻밤 성공이 아니다">Not an overnight success</h2>
-      <div id="timeline-en"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
-      <span style="color:#43474e;line-height:1.6;">다양한 애플리케이션 실험 및 시장 반응 데이터 수집에 집중</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
-      <span style="color:#43474e;line-height:1.6;">데이터 분석을 통해 잠재력 있는 제품을 식별하고 리소스를 집중하여 모멘텀 확보</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
-      <span style="color:#43474e;line-height:1.6;">선택된 제품에 대한 집중적인 마케팅 및 기능 개선을 통해 폭발적인 성장 달성</span>
-    </div></div>
-      <div id="timeline-ko" style="display:none;"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
-      <span style="color:#43474e;line-height:1.6;">다양한 애플리케이션 실험 및 시장 반응 데이터 수집에 집중</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
-      <span style="color:#43474e;line-height:1.6;">데이터 분석을 통해 잠재력 있는 제품을 식별하고 리소스를 집중하여 모멘텀 확보</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
-      <span style="color:#43474e;line-height:1.6;">선택된 제품에 대한 집중적인 마케팅 및 기능 개선을 통해 폭발적인 성장 달성</span>
-    </div></div>
-    </div><hr class="divider"/>
+            var toggleLabel = lang === 'en' ? 'KR' : 'EN';
+            var btn = document.getElementById('lang-toggle');
+            var btnMobile = document.getElementById('lang-toggle-mobile');
+            if (btn) btn.textContent = toggleLabel;
+            if (btnMobile) btnMobile.textContent = toggleLabel;
 
-    <div class="section">
-      <div class="section-label" data-en="⑥ HONEST LOOK" data-ko="⑥ 냉정하게">⑥ HONEST LOOK</div>
-      <h2 data-en="Weaknesses of this business" data-ko="이 사업의 약점">Weaknesses of this business</h2>
-      <p id="weakness-en">가장 큰 약점은 제품-시장 적합성(PMF)을 찾는 과정에서 발생하는 어려움입니다. 수많은 앱을 출시하는 과정에서 자원 분산이 발생하며, 이로 인해 단일 제품에 대한 집중력이 흐트러질 위험이 있습니다. 또한, 아이디어의 양이 많을수록 성공적인 제품으로 전환하는 '모멘텀 전환' 단계에서 발생하는 비효율성이 잠재적 약점으로 작용할 수 있습니다.</p>
-      <p id="weakness-ko" style="display:none;">가장 큰 약점은 제품-시장 적합성(PMF)을 찾는 과정에서 발생하는 어려움입니다. 수많은 앱을 출시하는 과정에서 자원 분산이 발생하며, 이로 인해 단일 제품에 대한 집중력이 흐트러질 위험이 있습니다. 또한, 아이디어의 양이 많을수록 성공적인 제품으로 전환하는 '모멘텀 전환' 단계에서 발생하는 비효율성이 잠재적 약점으로 작용할 수 있습니다.</p>
-    </div><hr class="divider"/>
+            try { localStorage.setItem(STORAGE_KEY, lang); } catch(e) {}
+        }
 
-    <div class="section">
-      <div class="section-label" data-en="⑦ TAKEAWAYS" data-ko="⑦ 따라할 수 있는 것">⑦ TAKEAWAYS</div>
-      <h2 data-en="3 things you can do today" data-ko="왕초보가 가져갈 3가지">3 things you can do today</h2>
-      <p id="action-en">1. 명확한 초기 타겟 설정: 모든 아이디어를 다루기보다, 가장 해결하기 쉽고 시장 수요가 명확한 단 하나의 문제에 집중하여 MVP를 빠르게 출시하십시오.<br/>2. 데이터 기반의 빠른 피벗: 초기 실험에서 얻은 사용자 행동 데이터를 냉정하게 분석하고, 성과가 낮은 아이디어는 과감히 중단하거나 방향을 수정하여 자원을 보존하십시오.<br/>3. 모멘텀 지표 정의: '모멘텀'을 추상적으로 두지 말고, 구체적인 사용자 유지율(Retention Rate)이나 전환율과 같은 측정 가능한 지표를 설정하고 이를 최우선 목표로 삼으십시오.</p>
-      <p id="action-ko" style="display:none;">1. 명확한 초기 타겟 설정: 모든 아이디어를 다루기보다, 가장 해결하기 쉽고 시장 수요가 명확한 단 하나의 문제에 집중하여 MVP를 빠르게 출시하십시오.<br/>2. 데이터 기반의 빠른 피벗: 초기 실험에서 얻은 사용자 행동 데이터를 냉정하게 분석하고, 성과가 낮은 아이디어는 과감히 중단하거나 방향을 수정하여 자원을 보존하십시오.<br/>3. 모멘텀 지표 정의: '모멘텀'을 추상적으로 두지 말고, 구체적인 사용자 유지율(Retention Rate)이나 전환율과 같은 측정 가능한 지표를 설정하고 이를 최우선 목표로 삼으십시오.</p>
-    </div><hr class="divider"/>
+        window.toggleLang = function() {
+            var current = document.documentElement.lang || 'en';
+            var next = current === 'en' ? 'ko' : 'en';
+            applyLang(next);
+        };
 
-    <div class="section">
-      <div class="section-label" data-en="⑧ REFERENCES" data-ko="⑧ 참고문헌">⑧ REFERENCES</div>
-      <h2 data-en="Sources" data-ko="출처를 공개한다">Sources</h2>
-      <div class="refs-item">Leadverse Official Website: https://leadverse.ai/</div><div class="refs-item">IndieHackers Article: https://www.indiehackers.com/post/tech/launching-countless-apps-until-one-gained-momentum-and-hit-3-3-k-mrr-U9btJ44RYRcAaukCqHoj</div>
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="container">
-    <p style="margin-bottom:8px;font-size:0.9rem;" data-en="Heyguys · Founder Dissect Series" data-ko="Heyguys · 해외 창업가 해부 시리즈">Heyguys · Founder Dissect Series</p>
-    <p style="font-size:0.8rem;opacity:0.7;margin-bottom:16px;">by <a href="https://honupbuilder.mariacamp.com">HONUP Builder</a></p>
-    <p style="font-size:0.75rem;opacity:0.5;">© 2026 HONUP Builder · Netmedia</p>
-  </div>
-</footer>
-
-<script>
-var lang = 'en';
-function toggleLang() {
-  lang = lang === 'en' ? 'ko' : 'en';
-  document.documentElement.lang = lang;
-  document.getElementById('lang-btn').textContent = lang === 'en' ? 'KR' : 'EN';
-  document.querySelectorAll('[data-en][data-ko]').forEach(function(el) {
-    el.textContent = el.getAttribute('data-' + lang);
-  });
-  var pairs = ['who','question','revenue','theory','weakness','action'];
-  pairs.forEach(function(id) {
-    var en = document.getElementById(id+'-en');
-    var ko = document.getElementById(id+'-ko');
-    if(en) en.style.display = lang==='en' ? '' : 'none';
-    if(ko) ko.style.display = lang==='ko' ? '' : 'none';
-  });
-  var tEn = document.getElementById('timeline-en');
-  var tKo = document.getElementById('timeline-ko');
-  if(tEn) tEn.style.display = lang==='en' ? '' : 'none';
-  if(tKo) tKo.style.display = lang==='ko' ? '' : 'none';
-  var sEn = document.getElementById('stat-grid-en');
-  var sKo = document.getElementById('stat-grid-ko');
-  if(sEn) sEn.style.display = lang==='en' ? '' : 'none';
-  if(sKo) sKo.style.display = lang==='ko' ? '' : 'none';
-}
-</script>
-</body>
-</html>— Jakub Mužík · Leadverse</title>
-<meta name="description" content="MRR · 3.3k 달러"/>
-<meta property="og:title" content="Heyguys EP.01 — Jakub Mužík · Leadverse"/>
-<meta property="og:description" content="MRR · 3.3k 달러"/>
-<meta property="og:type" content="article"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Inter',sans-serif;background:#f7fafc;color:#181c1e;line-height:1.7;}
-  .container{max-width:800px;margin:0 auto;padding:0 24px;}
-  header{background:#002045;color:white;padding:16px 0;}
-  header .inner{display:flex;align-items:center;justify-content:space-between;}
-  .brand{font-size:1.2rem;font-weight:700;color:white;text-decoration:none;}
-  .lang-btn{border:1px solid rgba(255,255,255,0.4);border-radius:6px;padding:4px 12px;font-size:13px;font-weight:600;color:white;background:transparent;cursor:pointer;}
-  .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#fe9743;margin-bottom:8px;}
-  h1{font-size:2.5rem;font-weight:700;color:#002045;line-height:1.2;margin-bottom:16px;}
-  @media(max-width:600px){h1{font-size:1.8rem;}}
-  .lead{font-size:1.1rem;color:#43474e;margin-bottom:32px;}
-  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0;}
-  @media(max-width:600px){.stat-grid{grid-template-columns:1fr;}}
-  .stat-card{background:#ebeef0;border-radius:8px;padding:20px;text-align:center;}
-  .stat-num{font-size:2rem;font-weight:700;color:#002045;}
-  .note{font-size:0.75rem;color:#74777f;background:#ebeef0;padding:12px;border-radius:6px;margin-bottom:32px;}
-  .section{margin:40px 0;}
-  .section-label{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#944b00;margin-bottom:8px;}
-  h2{font-size:1.5rem;font-weight:700;color:#002045;margin-bottom:16px;}
-  p{color:#43474e;margin-bottom:16px;line-height:1.8;}
-  .divider{border:none;border-top:1px solid #c4c6cf;margin:40px 0;}
-  .refs-item{font-size:0.85rem;color:#43474e;margin-bottom:8px;padding-left:16px;border-left:3px solid #002045;}
-  footer{background:#002045;color:white;padding:32px 0;margin-top:64px;text-align:center;}
-  footer a{color:#fe9743;text-decoration:none;}
-  .back-btn{display:inline-flex;align-items:center;gap:6px;color:#002045;font-weight:600;font-size:0.9rem;text-decoration:none;margin-bottom:32px;}
-</style>
-</head>
-<body>
-<header>
-  <div class="container">
-    <div class="inner">
-      <a href="https://honupbuilder.mariacamp.com" class="brand">HONUP Builder</a>
-      <div style="display:flex;align-items:center;gap:16px;">
-        <button class="lang-btn" id="lang-btn" onclick="toggleLang()">KR</button>
-        <span style="font-size:0.8rem;opacity:0.7;" data-en="Heyguys · Founder Dissect" data-ko="Heyguys · 창업가 해부 시리즈">Heyguys · Founder Dissect</span>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main style="padding:48px 0;">
-  <div class="container">
-    <a href="https://honupbuilder.mariacamp.com#building-log" class="back-btn" data-en="← Back to Building Log" data-ko="← Building Log으로 돌아가기">← Back to Building Log</a>
-    
-    <div class="eyebrow">🔬 Heyguys · EP.01</div>
-    <h1>Jakub Mužík · Leadverse</h1>
-    <p class="lead">MRR · 3.3k 달러</p>
-
-    <div class="stat-grid" id="stat-grid-en">
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">MRR</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">3.3k 달러</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">월간 반복 매출액으로 보고됨</div>
-      </div>
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">핵심 특징 1</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">앱 출시 및 스케일링 지원</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">개발자/창업가가 애플리케이션을 론칭하고 모멘텀을 얻도록 돕는 플랫폼</div>
-      </div>
-      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
-        <div style="font-size:2.5rem;font-weight:700;color:#002045;">핵심 특징 2</div>
-        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">구독 기반 수익 모델</div>
-        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">주요 수입원은 구독 서비스 형태임</div>
-      </div></div>
-    <div class="stat-grid" id="stat-grid-ko" style="display:none;"><div class="stat-card"><div class="stat-num">MRR</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">3.3k 달러</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">월간 반복 매출액으로 보고됨</div></div><div class="stat-card"><div class="stat-num">핵심 특징 1</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">앱 출시 및 스케일링 지원</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">개발자/창업가가 애플리케이션을 론칭하고 모멘텀을 얻도록 돕는 플랫폼</div></div><div class="stat-card"><div class="stat-num">핵심 특징 2</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">구독 기반 수익 모델</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">주요 수입원은 구독 서비스 형태임</div></div></div>
-
-    <p class="note" data-en="Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section." data-ko="수치는 본인 공개 인터뷰 및 업계 자료 기준입니다. 불확실한 수치는 각 섹션에 표시했습니다.">Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section.</p>
-
-    <div class="section">
-      <div class="section-label" data-en="① WHO" data-ko="① 누구인가">① WHO</div>
-      <h2 data-en="Who is Jakub Mužík?" data-ko="Jakub Mužík은 누구인가">Who is Jakub Mužík?</h2>
-      <p id="who-en">창업가 Jakub Mužík는 Leadverse를 설립하여 개발자 및 기업가들이 수많은 애플리케이션 중 하나가 성공적인 모멘텀을 얻도록 돕는 플랫폼을 구축했습니다. Leadverse의 핵심 가치는 '수많은 앱을 출시하여 하나의 성공적인 제품을 만드는 것'에 초점을 맞추고 있습니다.<br/>서비스 공식 웹사이트 URL: <a href="https://leadverse.ai/" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://leadverse.ai/</a></p>
-      <p id="who-ko" style="display:none;">창업가 Jakub Mužík는 Leadverse를 설립하여 개발자 및 기업가들이 수많은 애플리케이션 중 하나가 성공적인 모멘텀을 얻도록 돕는 플랫폼을 구축했습니다. Leadverse의 핵심 가치는 '수많은 앱을 출시하여 하나의 성공적인 제품을 만드는 것'에 초점을 맞추고 있습니다.<br/>서비스 공식 웹사이트 URL: <a href="https://leadverse.ai/" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://leadverse.ai/</a></p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="② THE QUESTION" data-ko="② 이 편의 질문">② THE QUESTION</div>
-      <h2 data-en="What we're dissecting" data-ko="우리가 해부할 것">What we're dissecting</h2>
-      <p id="question-en">Leadverse의 핵심 질문은 '수많은 아이디어와 앱 중에서 어떻게 단 하나의 제품이 성공적인 모멘텀을 얻도록 도울 것인가?'입니다. 이 서비스는 아이디어의 과부하 상태에서 벗어나, 개발자가 시장에서 주목받을 수 있는 단일 제품에 집중하고 성장할 수 있도록 돕는 것이 핵심 논지입니다.</p>
-      <p id="question-ko" style="display:none;">Leadverse의 핵심 질문은 '수많은 아이디어와 앱 중에서 어떻게 단 하나의 제품이 성공적인 모멘텀을 얻도록 도울 것인가?'입니다. 이 서비스는 아이디어의 과부하 상태에서 벗어나, 개발자가 시장에서 주목받을 수 있는 단일 제품에 집중하고 성장할 수 있도록 돕는 것이 핵심 논지입니다.</p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="③ REVENUE" data-ko="③ 수입 구조">③ REVENUE</div>
-      <h2 data-en="How they make money" data-ko="어떻게 버는가">How they make money</h2>
-      <p id="revenue-en">Leadverse의 주요 수입 구조는 구독 기반(Subscription-based) 모델입니다. 이는 월간 반복 매출(MRR)을 통해 직접적으로 측정되며, 보고된 수치는 3,300달러(약 450만 원, 환율에 따라 변동)의 MRR입니다. 이 모델은 지속적인 사용자 확보와 서비스 가치 제공을 통해 안정적인 반복 수익을 창출하는 데 중점을 둡니다.</p>
-      <p id="revenue-ko" style="display:none;">Leadverse의 주요 수입 구조는 구독 기반(Subscription-based) 모델입니다. 이는 월간 반복 매출(MRR)을 통해 직접적으로 측정되며, 보고된 수치는 3,300달러(약 450만 원, 환율에 따라 변동)의 MRR입니다. 이 모델은 지속적인 사용자 확보와 서비스 가치 제공을 통해 안정적인 반복 수익을 창출하는 데 중점을 둡니다.</p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="④ THEORY / DATA" data-ko="④ 이론/데이터">④ THEORY / DATA</div>
-      <h2 data-en="The framework behind it" data-ko="이론으로 해부한다">The framework behind it</h2>
-      <p id="theory-en">Leadverse의 성공 이론은 '다수 실험을 통한 단일 집중(Many Experiments to Single Focus)'에 기반합니다. 초기 단계에서는 다양한 앱을 출시하여 시장의 반응을 실험하고 데이터를 수집하는 데 집중합니다. 이후, 이 데이터를 기반으로 가장 잠재력이 높은 제품을 식별하고 리소스를 집중하여 해당 제품의 성장을 가속화하는 전략입니다. 이는 'Launch countless apps until one gained momentum'이라는 철학을 실현하기 위한 방법론적 접근입니다.</p>
-      <p id="theory-ko" style="display:none;">Leadverse의 성공 이론은 '다수 실험을 통한 단일 집중(Many Experiments to Single Focus)'에 기반합니다. 초기 단계에서는 다양한 앱을 출시하여 시장의 반응을 실험하고 데이터를 수집하는 데 집중합니다. 이후, 이 데이터를 기반으로 가장 잠재력이 높은 제품을 식별하고 리소스를 집중하여 해당 제품의 성장을 가속화하는 전략입니다. 이는 'Launch countless apps until one gained momentum'이라는 철학을 실현하기 위한 방법론적 접근입니다.</p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="⑤ TIMELINE" data-ko="⑤ 성장 타임라인">⑤ TIMELINE</div>
-      <h2 data-en="Not an overnight success" data-ko="하룻밤 성공이 아니다">Not an overnight success</h2>
-      <div id="timeline-en"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
-      <span style="color:#43474e;line-height:1.6;">다양한 애플리케이션 실험 및 시장 반응 데이터 수집에 집중</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
-      <span style="color:#43474e;line-height:1.6;">데이터 분석을 통해 잠재력 있는 제품을 식별하고 리소스를 집중하여 모멘텀 확보</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
-      <span style="color:#43474e;line-height:1.6;">선택된 제품에 대한 집중적인 마케팅 및 기능 개선을 통해 폭발적인 성장 달성</span>
-    </div></div>
-      <div id="timeline-ko" style="display:none;"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
-      <span style="color:#43474e;line-height:1.6;">다양한 애플리케이션 실험 및 시장 반응 데이터 수집에 집중</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
-      <span style="color:#43474e;line-height:1.6;">데이터 분석을 통해 잠재력 있는 제품을 식별하고 리소스를 집중하여 모멘텀 확보</span>
-    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
-      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
-      <span style="color:#43474e;line-height:1.6;">선택된 제품에 대한 집중적인 마케팅 및 기능 개선을 통해 폭발적인 성장 달성</span>
-    </div></div>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="⑥ HONEST LOOK" data-ko="⑥ 냉정하게">⑥ HONEST LOOK</div>
-      <h2 data-en="Weaknesses of this business" data-ko="이 사업의 약점">Weaknesses of this business</h2>
-      <p id="weakness-en">가장 큰 약점은 제품-시장 적합성(PMF)을 찾는 과정에서 발생하는 어려움입니다. 수많은 앱을 출시하는 과정에서 자원 분산이 발생하며, 이로 인해 단일 제품에 대한 집중력이 흐트러질 위험이 있습니다. 또한, 아이디어의 양이 많을수록 성공적인 제품으로 전환하는 '모멘텀 전환' 단계에서 발생하는 비효율성이 잠재적 약점으로 작용할 수 있습니다.</p>
-      <p id="weakness-ko" style="display:none;">가장 큰 약점은 제품-시장 적합성(PMF)을 찾는 과정에서 발생하는 어려움입니다. 수많은 앱을 출시하는 과정에서 자원 분산이 발생하며, 이로 인해 단일 제품에 대한 집중력이 흐트러질 위험이 있습니다. 또한, 아이디어의 양이 많을수록 성공적인 제품으로 전환하는 '모멘텀 전환' 단계에서 발생하는 비효율성이 잠재적 약점으로 작용할 수 있습니다.</p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="⑦ TAKEAWAYS" data-ko="⑦ 따라할 수 있는 것">⑦ TAKEAWAYS</div>
-      <h2 data-en="3 things you can do today" data-ko="왕초보가 가져갈 3가지">3 things you can do today</h2>
-      <p id="action-en">1. 명확한 초기 타겟 설정: 모든 아이디어를 다루기보다, 가장 해결하기 쉽고 시장 수요가 명확한 단 하나의 문제에 집중하여 MVP를 빠르게 출시하십시오.<br/>2. 데이터 기반의 빠른 피벗: 초기 실험에서 얻은 사용자 행동 데이터를 냉정하게 분석하고, 성과가 낮은 아이디어는 과감히 중단하거나 방향을 수정하여 자원을 보존하십시오.<br/>3. 모멘텀 지표 정의: '모멘텀'을 추상적으로 두지 말고, 구체적인 사용자 유지율(Retention Rate)이나 전환율과 같은 측정 가능한 지표를 설정하고 이를 최우선 목표로 삼으십시오.</p>
-      <p id="action-ko" style="display:none;">1. 명확한 초기 타겟 설정: 모든 아이디어를 다루기보다, 가장 해결하기 쉽고 시장 수요가 명확한 단 하나의 문제에 집중하여 MVP를 빠르게 출시하십시오.<br/>2. 데이터 기반의 빠른 피벗: 초기 실험에서 얻은 사용자 행동 데이터를 냉정하게 분석하고, 성과가 낮은 아이디어는 과감히 중단하거나 방향을 수정하여 자원을 보존하십시오.<br/>3. 모멘텀 지표 정의: '모멘텀'을 추상적으로 두지 말고, 구체적인 사용자 유지율(Retention Rate)이나 전환율과 같은 측정 가능한 지표를 설정하고 이를 최우선 목표로 삼으십시오.</p>
-    </div><hr class="divider"/>
-
-    <div class="section">
-      <div class="section-label" data-en="⑧ REFERENCES" data-ko="⑧ 참고문헌">⑧ REFERENCES</div>
-      <h2 data-en="Sources" data-ko="출처를 공개한다">Sources</h2>
-      <div class="refs-item">Leadverse Official Website: https://leadverse.ai/</div><div class="refs-item">IndieHackers Article: https://www.indiehackers.com/post/tech/launching-countless-apps-until-one-gained-momentum-and-hit-3-3-k-mrr-U9btJ44RYRcAaukCqHoj</div>
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="container">
-    <p style="margin-bottom:8px;font-size:0.9rem;" data-en="Heyguys · Founder Dissect Series" data-ko="Heyguys · 해외 창업가 해부 시리즈">Heyguys · Founder Dissect Series</p>
-    <p style="font-size:0.8rem;opacity:0.7;margin-bottom:16px;">by <a href="https://honupbuilder.mariacamp.com">HONUP Builder</a></p>
-    <p style="font-size:0.75rem;opacity:0.5;">© 2026 HONUP Builder · Netmedia</p>
-  </div>
-</footer>
-
-<script>
-var lang = 'en';
-function toggleLang() {
-  lang = lang === 'en' ? 'ko' : 'en';
-  document.documentElement.lang = lang;
-  document.getElementById('lang-btn').textContent = lang === 'en' ? 'KR' : 'EN';
-  document.querySelectorAll('[data-en][data-ko]').forEach(function(el) {
-    el.textContent = el.getAttribute('data-' + lang);
-  });
-  var pairs = ['who','question','revenue','theory','weakness','action'];
-  pairs.forEach(function(id) {
-    var en = document.getElementById(id+'-en');
-    var ko = document.getElementById(id+'-ko');
-    if(en) en.style.display = lang==='en' ? '' : 'none';
-    if(ko) ko.style.display = lang==='ko' ? '' : 'none';
-  });
-  var tEn = document.getElementById('timeline-en');
-  var tKo = document.getElementById('timeline-ko');
-  if(tEn) tEn.style.display = lang==='en' ? '' : 'none';
-  if(tKo) tKo.style.display = lang==='ko' ? '' : 'none';
-  var sEn = document.getElementById('stat-grid-en');
-  var sKo = document.getElementById('stat-grid-ko');
-  if(sEn) sEn.style.display = lang==='en' ? '' : 'none';
-  if(sKo) sKo.style.display = lang==='ko' ? '' : 'none';
-}
-</script>
+        var saved;
+        try { saved = localStorage.getItem(STORAGE_KEY); } catch(e) {}
+        applyLang(saved === 'ko' ? 'ko' : 'en');
+    })();
+    </script>
 </body>
 </html>
