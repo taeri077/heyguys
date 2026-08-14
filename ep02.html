@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Heyguys EP.02 — Truong Phung · The Solo-Founder Playbook</title>
+<meta name="description" content="솔로프리너 창업 전략"/>
+<meta property="og:title" content="Heyguys EP.02 — Truong Phung · The Solo-Founder Playbook"/>
+<meta property="og:description" content="솔로프리너 창업 전략"/>
+<meta property="og:type" content="article"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter',sans-serif;background:#f7fafc;color:#181c1e;line-height:1.7;}
+  .container{max-width:800px;margin:0 auto;padding:0 24px;}
+  header{background:#002045;color:white;padding:16px 0;}
+  header .inner{display:flex;align-items:center;justify-content:space-between;}
+  .brand{font-size:1.2rem;font-weight:700;color:white;text-decoration:none;}
+  .lang-btn{border:1px solid rgba(255,255,255,0.4);border-radius:6px;padding:4px 12px;font-size:13px;font-weight:600;color:white;background:transparent;cursor:pointer;}
+  .eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#fe9743;margin-bottom:8px;}
+  h1{font-size:2.5rem;font-weight:700;color:#002045;line-height:1.2;margin-bottom:16px;}
+  @media(max-width:600px){h1{font-size:1.8rem;}}
+  .lead{font-size:1.1rem;color:#43474e;margin-bottom:32px;}
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0;}
+  @media(max-width:600px){.stat-grid{grid-template-columns:1fr;}}
+  .stat-card{background:#ebeef0;border-radius:8px;padding:20px;text-align:center;}
+  .stat-num{font-size:2rem;font-weight:700;color:#002045;}
+  .note{font-size:0.75rem;color:#74777f;background:#ebeef0;padding:12px;border-radius:6px;margin-bottom:32px;}
+  .section{margin:40px 0;}
+  .section-label{font-size:0.75rem;font-weight:700;letter-spacing:0.05em;color:#944b00;margin-bottom:8px;}
+  h2{font-size:1.5rem;font-weight:700;color:#002045;margin-bottom:16px;}
+  p{color:#43474e;margin-bottom:16px;line-height:1.8;}
+  .divider{border:none;border-top:1px solid #c4c6cf;margin:40px 0;}
+  .refs-item{font-size:0.85rem;color:#43474e;margin-bottom:8px;padding-left:16px;border-left:3px solid #002045;}
+  footer{background:#002045;color:white;padding:32px 0;margin-top:64px;text-align:center;}
+  footer a{color:#fe9743;text-decoration:none;}
+  .back-btn{display:inline-flex;align-items:center;gap:6px;color:#002045;font-weight:600;font-size:0.9rem;text-decoration:none;margin-bottom:32px;}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="inner">
+      <a href="https://honupbuilder.mariacamp.com" class="brand">HONUP Builder</a>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <button class="lang-btn" id="lang-btn" onclick="toggleLang()">KR</button>
+        <span style="font-size:0.8rem;opacity:0.7;" data-en="Heyguys · Founder Dissect" data-ko="Heyguys · 창업가 해부 시리즈">Heyguys · Founder Dissect</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main style="padding:48px 0;">
+  <div class="container">
+    <a href="https://honupbuilder.mariacamp.com#building-log" class="back-btn" data-en="← Back to Building Log" data-ko="← Building Log으로 돌아가기">← Back to Building Log</a>
+    
+    <div class="eyebrow">🔬 Heyguys · EP.02</div>
+    <h1>Truong Phung · The Solo-Founder Playbook</h1>
+    <p class="lead">솔로프리너 창업 전략</p>
+
+    <div class="stat-grid" id="stat-grid-en">
+      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
+        <div style="font-size:2.5rem;font-weight:700;color:#002045;">수치또는특징</div>
+        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">라벨</div>
+        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">설명</div>
+      </div>
+      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
+        <div style="font-size:2.5rem;font-weight:700;color:#002045;">솔로 창업가 전략</div>
+        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">핵심 특징</div>
+        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">개인 경험을 바탕으로 한 실행 가능한 가이드 제공</div>
+      </div>
+      <div style="background:#ebeef0;border-radius:8px;padding:20px;text-align:center;">
+        <div style="font-size:2.5rem;font-weight:700;color:#002045;">지식 기반 제품</div>
+        <div style="font-size:0.8rem;font-weight:600;color:#43474e;margin-top:4px;">핵심 특징</div>
+        <div style="font-size:0.75rem;color:#74777f;margin-top:4px;">'The Solo-Founder Playbook'이라는 지식 상품 판매</div>
+      </div></div>
+    <div class="stat-grid" id="stat-grid-ko" style="display:none;"><div class="stat-card"><div class="stat-num">수치또는특징</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">라벨</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">설명</div></div><div class="stat-card"><div class="stat-num">솔로 창업가 전략</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">핵심 특징</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">개인 경험을 바탕으로 한 실행 가능한 가이드 제공</div></div><div class="stat-card"><div class="stat-num">지식 기반 제품</div><div style="font-size:0.75rem;color:#74777f;margin-top:4px;">핵심 특징</div><div style="font-size:0.7rem;color:#74777f;margin-top:4px;">'The Solo-Founder Playbook'이라는 지식 상품 판매</div></div></div>
+
+    <p class="note" data-en="Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section." data-ko="수치는 본인 공개 인터뷰 및 업계 자료 기준입니다. 불확실한 수치는 각 섹션에 표시했습니다.">Numbers are based on public interviews and industry sources. Uncertain figures are flagged in each section.</p>
+
+    <div class="section">
+      <div class="section-label" data-en="① WHO" data-ko="① 누구인가">① WHO</div>
+      <h2 data-en="Who is Truong Phung?" data-ko="Truong Phung은 누구인가">Who is Truong Phung?</h2>
+      <p id="who-en">창업가 트엉 풍(Truong Phung)은 'The Solo-Founder Playbook'의 저자이자 확산자입니다. 이 서비스는 솔로 창업가들이 독립적으로 스타트업 여정을 헤쳐나가는 데 필요한 전략과 실행 방안을 체계화하여 제공하는 지식 기반 콘텐츠입니다. 그의 핵심 목표는 개인의 경험을 바탕으로 다른 이들에게 실질적인 가이드를 제공하는 것입니다.<br/>서비스 공식 웹사이트 URL: <a href="https://dev.to/truongpx396/the-solo-founder-playbook-zero-hero-3j7d" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://dev.to/truongpx396/the-solo-founder-playbook-zero-hero-3j7d</a></p>
+      <p id="who-ko" style="display:none;">창업가 트엉 풍(Truong Phung)은 'The Solo-Founder Playbook'의 저자이자 확산자입니다. 이 서비스는 솔로 창업가들이 독립적으로 스타트업 여정을 헤쳐나가는 데 필요한 전략과 실행 방안을 체계화하여 제공하는 지식 기반 콘텐츠입니다. 그의 핵심 목표는 개인의 경험을 바탕으로 다른 이들에게 실질적인 가이드를 제공하는 것입니다.<br/>서비스 공식 웹사이트 URL: <a href="https://dev.to/truongpx396/the-solo-founder-playbook-zero-hero-3j7d" target="_blank" rel="noopener noreferrer" style="color:#002045;text-decoration:underline;">https://dev.to/truongpx396/the-solo-founder-playbook-zero-hero-3j7d</a></p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="② THE QUESTION" data-ko="② 이 편의 질문">② THE QUESTION</div>
+      <h2 data-en="What we're dissecting" data-ko="우리가 해부할 것">What we're dissecting</h2>
+      <p id="question-en">이 콘텐츠의 핵심 질문은 '솔로 창업가들이 독립적으로 성공하기 위해 필요한 구체적이고 실행 가능한 전략은 무엇이며, 이를 어떻게 상품화하여 시장에 제공할 것인가?'입니다. 논지는 개인의 경험을 구조화된 지식(Playbook)으로 전환하여, 혼자 시작하는 이들의 진입 장벽을 낮추고 성공 가능성을 높이는 데 초점을 맞춥니다.</p>
+      <p id="question-ko" style="display:none;">이 콘텐츠의 핵심 질문은 '솔로 창업가들이 독립적으로 성공하기 위해 필요한 구체적이고 실행 가능한 전략은 무엇이며, 이를 어떻게 상품화하여 시장에 제공할 것인가?'입니다. 논지는 개인의 경험을 구조화된 지식(Playbook)으로 전환하여, 혼자 시작하는 이들의 진입 장벽을 낮추고 성공 가능성을 높이는 데 초점을 맞춥니다.</p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="③ REVENUE" data-ko="③ 수입 구조">③ REVENUE</div>
+      <h2 data-en="How they make money" data-ko="어떻게 버는가">How they make money</h2>
+      <p id="revenue-en">수입 구조는 주로 'The Solo-Founder Playbook' 자체의 판매를 통해 이루어지는 지식 기반 모델로 추정됩니다. 이는 전자책, 온라인 코스 또는 디지털 가이드 형태일 가능성이 높습니다. 추가적인 수입원은 Playbook의 내용에 기반한 맞춤형 코칭 서비스나 컨설팅 제공일 수 있습니다. 즉, 콘텐츠 제작 및 판매를 초기 수익원으로 삼고, 이후 고부가가치 서비스로 확장하는 구조가 예상됩니다.</p>
+      <p id="revenue-ko" style="display:none;">수입 구조는 주로 'The Solo-Founder Playbook' 자체의 판매를 통해 이루어지는 지식 기반 모델로 추정됩니다. 이는 전자책, 온라인 코스 또는 디지털 가이드 형태일 가능성이 높습니다. 추가적인 수입원은 Playbook의 내용에 기반한 맞춤형 코칭 서비스나 컨설팅 제공일 수 있습니다. 즉, 콘텐츠 제작 및 판매를 초기 수익원으로 삼고, 이후 고부가가치 서비스로 확장하는 구조가 예상됩니다.</p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="④ THEORY / DATA" data-ko="④ 이론/데이터">④ THEORY / DATA</div>
+      <h2 data-en="The framework behind it" data-ko="이론으로 해부한다">The framework behind it</h2>
+      <p id="theory-en">솔로 창업가의 성공은 '개인의 경험을 체계화하고 표준화하는 능력'에 달려 있습니다. 이 이론은 혼자서 모든 것을 해결해야 하는 솔로 창업가의 고립감과 비효율성을 해소하는 데서 출발합니다. 핵심 이론은 다음과 같습니다: 첫째, 경험을 구조화하여 'Playbook'이라는 형태로 만들어 지식의 접근성을 높입니다. 둘째, 이 Playbook을 통해 잠재 고객에게 명확한 로드맵을 제시하여 구매를 유도합니다. 셋째, 콘텐츠 판매를 시작으로 서비스 제공(코칭)으로 확장하여 수익 모델을 다각화하는 것입니다. 이는 개인의 전문성을 디지털 자산으로 전환하는 과정입니다.</p>
+      <p id="theory-ko" style="display:none;">솔로 창업가의 성공은 '개인의 경험을 체계화하고 표준화하는 능력'에 달려 있습니다. 이 이론은 혼자서 모든 것을 해결해야 하는 솔로 창업가의 고립감과 비효율성을 해소하는 데서 출발합니다. 핵심 이론은 다음과 같습니다: 첫째, 경험을 구조화하여 'Playbook'이라는 형태로 만들어 지식의 접근성을 높입니다. 둘째, 이 Playbook을 통해 잠재 고객에게 명확한 로드맵을 제시하여 구매를 유도합니다. 셋째, 콘텐츠 판매를 시작으로 서비스 제공(코칭)으로 확장하여 수익 모델을 다각화하는 것입니다. 이는 개인의 전문성을 디지털 자산으로 전환하는 과정입니다.</p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="⑤ TIMELINE" data-ko="⑤ 성장 타임라인">⑤ TIMELINE</div>
+      <h2 data-en="Not an overnight success" data-ko="하룻밤 성공이 아니다">Not an overnight success</h2>
+      <div id="timeline-en"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
+      <span style="color:#43474e;line-height:1.6;">개인 경험을 바탕으로 핵심 전략을 정리하고 Playbook의 초안을 작성하는 단계</span>
+    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
+      <span style="color:#43474e;line-height:1.6;">Playbook을 시장에 출시하고 초기 사용자 피드백을 수집하며 콘텐츠를 개선하는 단계</span>
+    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
+      <span style="color:#43474e;line-height:1.6;">Playbook 판매를 기반으로 고가치 코칭 서비스나 커뮤니티 구축을 통해 수익 모델을 다각화하고 확장하는 단계</span>
+    </div></div>
+      <div id="timeline-ko" style="display:none;"><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">초기 단계</span>
+      <span style="color:#43474e;line-height:1.6;">개인 경험을 바탕으로 핵심 전략을 정리하고 Playbook의 초안을 작성하는 단계</span>
+    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">성장 단계</span>
+      <span style="color:#43474e;line-height:1.6;">Playbook을 시장에 출시하고 초기 사용자 피드백을 수집하며 콘텐츠를 개선하는 단계</span>
+    </div><div style="display:flex;gap:16px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #ebeef0;">
+      <span style="font-weight:700;color:#002045;min-width:56px;font-size:0.9rem;">가속화 단계</span>
+      <span style="color:#43474e;line-height:1.6;">Playbook 판매를 기반으로 고가치 코칭 서비스나 커뮤니티 구축을 통해 수익 모델을 다각화하고 확장하는 단계</span>
+    </div></div>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="⑥ HONEST LOOK" data-ko="⑥ 냉정하게">⑥ HONEST LOOK</div>
+      <h2 data-en="Weaknesses of this business" data-ko="이 사업의 약점">Weaknesses of this business</h2>
+      <p id="weakness-en">솔로 창업가로서 Playbook을 판매하는 모델의 잠재적 약점은 콘텐츠 제작 및 유지보수의 확장성입니다. 초기에는 개인 역량으로 충분하지만, Playbook의 깊이를 유지하거나 새로운 시장 요구에 맞춰 콘텐츠를 지속적으로 업데이트하는 과정에서 시간적 제약과 번아웃이 발생할 수 있습니다. 또한, 콘텐츠 판매 중심에서 고도로 개인화된 서비스 제공으로 전환할 때, 시간당 수익률을 관리하고 고객 만족도를 유지하는 것이 어려울 수 있습니다.</p>
+      <p id="weakness-ko" style="display:none;">솔로 창업가로서 Playbook을 판매하는 모델의 잠재적 약점은 콘텐츠 제작 및 유지보수의 확장성입니다. 초기에는 개인 역량으로 충분하지만, Playbook의 깊이를 유지하거나 새로운 시장 요구에 맞춰 콘텐츠를 지속적으로 업데이트하는 과정에서 시간적 제약과 번아웃이 발생할 수 있습니다. 또한, 콘텐츠 판매 중심에서 고도로 개인화된 서비스 제공으로 전환할 때, 시간당 수익률을 관리하고 고객 만족도를 유지하는 것이 어려울 수 있습니다.</p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="⑦ TAKEAWAYS" data-ko="⑦ 따라할 수 있는 것">⑦ TAKEAWAYS</div>
+      <h2 data-en="3 things you can do today" data-ko="왕초보가 가져갈 3가지">3 things you can do today</h2>
+      <p id="action-en">1. 핵심 문제 정의: 현재 자신이 겪고 있는 가장 큰 '솔로 창업의 병목 현상' 세 가지를 명확히 정의하십시오.<br/>2. Playbook 모듈화: 전체 지식을 작은 단위의 실행 가능한 모듈(챕터 또는 템플릿)로 분해하여, 즉시 판매 가능한 최소 기능 제품(MVP)을 제작하십시오.<br/>3. 피드백 루프 구축: Playbook 구매자들을 대상으로 정기적인 Q&A 세션이나 베타 테스트 그룹을 운영하여, 콘텐츠의 실효성을 검증하고 다음 버전 업데이트에 즉시 반영하십시오.</p>
+      <p id="action-ko" style="display:none;">1. 핵심 문제 정의: 현재 자신이 겪고 있는 가장 큰 '솔로 창업의 병목 현상' 세 가지를 명확히 정의하십시오.<br/>2. Playbook 모듈화: 전체 지식을 작은 단위의 실행 가능한 모듈(챕터 또는 템플릿)로 분해하여, 즉시 판매 가능한 최소 기능 제품(MVP)을 제작하십시오.<br/>3. 피드백 루프 구축: Playbook 구매자들을 대상으로 정기적인 Q&A 세션이나 베타 테스트 그룹을 운영하여, 콘텐츠의 실효성을 검증하고 다음 버전 업데이트에 즉시 반영하십시오.</p>
+    </div><hr class="divider"/>
+
+    <div class="section">
+      <div class="section-label" data-en="⑧ REFERENCES" data-ko="⑧ 참고문헌">⑧ REFERENCES</div>
+      <h2 data-en="Sources" data-ko="출처를 공개한다">Sources</h2>
+      <div class="refs-item">https://dev.to/truongpx396/the-solo-founder-playbook-zero-hero-3j7d</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p style="margin-bottom:8px;font-size:0.9rem;" data-en="Heyguys · Founder Dissect Series" data-ko="Heyguys · 해외 창업가 해부 시리즈">Heyguys · Founder Dissect Series</p>
+    <p style="font-size:0.8rem;opacity:0.7;margin-bottom:16px;">by <a href="https://honupbuilder.mariacamp.com">HONUP Builder</a></p>
+    <p style="font-size:0.75rem;opacity:0.5;">© 2026 HONUP Builder · Netmedia</p>
+  </div>
+</footer>
+
+<script>
+var lang = 'en';
+function toggleLang() {
+  lang = lang === 'en' ? 'ko' : 'en';
+  document.documentElement.lang = lang;
+  document.getElementById('lang-btn').textContent = lang === 'en' ? 'KR' : 'EN';
+  document.querySelectorAll('[data-en][data-ko]').forEach(function(el) {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+  var pairs = ['who','question','revenue','theory','weakness','action'];
+  pairs.forEach(function(id) {
+    var en = document.getElementById(id+'-en');
+    var ko = document.getElementById(id+'-ko');
+    if(en) en.style.display = lang==='en' ? '' : 'none';
+    if(ko) ko.style.display = lang==='ko' ? '' : 'none';
+  });
+  var tEn = document.getElementById('timeline-en');
+  var tKo = document.getElementById('timeline-ko');
+  if(tEn) tEn.style.display = lang==='en' ? '' : 'none';
+  if(tKo) tKo.style.display = lang==='ko' ? '' : 'none';
+  var sEn = document.getElementById('stat-grid-en');
+  var sKo = document.getElementById('stat-grid-ko');
+  if(sEn) sEn.style.display = lang==='en' ? '' : 'none';
+  if(sKo) sKo.style.display = lang==='ko' ? '' : 'none';
+}
+</script>
+</body>
+</html>
